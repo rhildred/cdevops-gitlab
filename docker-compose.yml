@@ -20,6 +20,7 @@ services:
   
   # new changes for adding Gitlab Runner container
   gitlab-runner:
-    image: gitlab/gitlab-runner:alpine
+    image: gitlab/gitlab-runner:ubuntu
     container_name: gitlab-runner
-    network_mode: 'host'
+    volumes:
+      - ./gitlab/gitlab-runner:/etc/gitlab-runner
