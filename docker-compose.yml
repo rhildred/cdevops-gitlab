@@ -9,6 +9,7 @@ services:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'https://g4b.k3p.ca'
         nginx['listen_port'] = 8022
+        nginx['listen_https'] = false
     ports:
       - '8022:8022'
     volumes:
