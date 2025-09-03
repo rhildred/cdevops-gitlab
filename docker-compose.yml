@@ -7,7 +7,7 @@ services:
       GITLAB_ROOT_EMAIL: "admin@buildwithlal.com"
       GITLAB_ROOT_PASSWORD: "Abcd@0123456789"
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://g4b.k3p.ca'
+        external_url 'https://g4b.k3p.ca'
         nginx['listen_port'] = 8022
     ports:
       - '8022:8022'
