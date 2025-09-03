@@ -10,6 +10,7 @@ services:
         external_url 'https://g4b.k3p.ca'
         nginx['listen_port'] = 8022
         nginx['listen_https'] = false
+        nginx['redirect_http_to_https'] = false
     ports:
       - '8022:8022'
     volumes:
