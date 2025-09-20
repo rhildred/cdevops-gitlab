@@ -13,6 +13,7 @@ services:
         nginx['redirect_http_to_https'] = false
     ports:
       - '8022:8022'
+    restart: always
     volumes:
       - ./gitlab/config:/etc/gitlab
       - ./gitlab/data:/var/opt/gitlab
@@ -24,3 +25,4 @@ services:
     container_name: gitlab-runner
     volumes:
       - ./gitlab/gitlab-runner:/etc/gitlab-runner
+    restart: always
